@@ -7,15 +7,17 @@ import javax.persistence.*;
 public class Car {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int series;
+    private int id;
 
     private String model;
 
+    private int series;
     public Car() {
     }
 
-    public Car(String model) {
+    public Car(String model, int series) {
         this.model = model;
+        this.series = series;
     }
 
     public int getSeries() {
