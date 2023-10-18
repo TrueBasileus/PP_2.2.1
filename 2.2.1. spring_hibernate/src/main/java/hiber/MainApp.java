@@ -32,7 +32,7 @@ public class MainApp {
       }
 
       System.out.println("\n------------------\n\n");
-      User myUser = userService.userByCar("Mazda", 2);
+      User myUser = userService.getUserByCar("Mazda", 2);
       System.out.println(myUser.getFirstName() + " " + myUser.getLastName());
 
       context.close();
